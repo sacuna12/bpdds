@@ -28,4 +28,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Subir out/ a S3
-        run: aws s3 sync ./out s3://${{ secrets.S3_BUCKET }} --deletewww/html/
+        run: aws s3 sync ./out s3://${{ secrets.S3_BUCKET }} --delete
